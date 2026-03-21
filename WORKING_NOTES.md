@@ -18,24 +18,26 @@
 
 ## Current State
 
-**Last Updated:** 2026-03-19
+**Last Updated:** 2026-03-20
 
-The project is a complete, deployed personal landing page. All core sections are implemented and styled. The site is live on Azure Static Web Apps and the source code is hosted on GitHub.
+The project is a complete, deployed personal landing page (v1.1.0). All core sections are implemented and styled. The site is live on Azure Static Web Apps and hosted on Replit. Source code is on GitHub.
 
 ### What Is Working
 
 - [x] Hero section with animated blinking cursor and meta info
-- [x] About section with headshot, bio text, and stats sidebar
-- [x] Skills section with three-column grid layout
-- [x] Projects section with four numbered project cards
-- [x] Experience section with timeline-style layout
-- [x] Contact section with social links (LinkedIn, GitHub, X, email)
-- [x] Fixed bottom navigation bar with smooth scroll
+- [x] About section — professional headshot in dedicated photo column, bio text, and stats row
+- [x] Skills section with three-column grid (Programming & Databases / Data & Visualization / AI & ML)
+- [x] Projects section with five numbered project cards (DataForge, Incident Dashboard, Spotify Analysis, Multi-Ownership Soccer, Landing Page)
+- [x] Experience section with timeline-style layout (Data Analyst Intern, Direct Support Professional)
+- [x] Education section (University of Iowa, Kirkwood Community College, Google certifications)
+- [x] Contact section with social links (LinkedIn, GitHub, X, email) — all with aria-labels
+- [x] Fixed bottom navigation bar with smooth scroll (includes Education link)
 - [x] Fully responsive layout (320px to desktop)
 - [x] External stylesheet (`css/stylesheet.css`)
 - [x] Vanilla JavaScript for smooth scroll (`js/scripts.js`)
-- [x] Professional headshot integrated
+- [x] Professional headshot in `images/headshot.jpg`
 - [x] Deployed to Azure Static Web Apps
+- [x] Imported and running on Replit (static deployment, port 5000)
 - [x] Source code on GitHub
 
 ### What Is Partially Built
@@ -55,10 +57,10 @@ The project is a complete, deployed personal landing page. All core sections are
 ## Current Task
 
 **What I was working on when I last stopped:**
-Finalizing the deployment pipeline. The landing page code was pushed to the `jkirima-personalanding-page` GitHub repository. Azure Static Web App deployment was configured. README.md and WORKING_NOTES.md were created and committed.
+Finalized v1.1.0 changes — headshot layout, Education section, five projects, updated docs. Pushed all changes to GitHub with commit: `feat: final documentation and replit config update`.
 
 **The very next step is:**
-Verify the Azure deployment is live and confirm the site renders correctly at the Azure URL. Then add favicon and Open Graph tags as a v1.1 enhancement.
+Add favicon and Open Graph meta tags as a v1.2 enhancement. Run W3C HTML and CSS validators to confirm compliance.
 
 ---
 
@@ -193,6 +195,33 @@ This project has **no persistent data**. It is a fully static site with no datab
 ---
 
 ## Session Log
+
+### 2026-03-20
+
+- **What was accomplished:**
+  - Imported project to Replit environment; configured http-server workflow on port 5000
+  - Replaced placeholder headshot with proper professional photo in `images/headshot.jpg`
+  - Restructured About section — headshot now in its own dedicated column (220px), bio and stats in right column
+  - Added dedicated Education section with University of Iowa, Kirkwood Community College, and Google certifications
+  - Added Multi-Ownership in European Soccer as Project 04 (Tableau / Kaggle)
+  - Updated Projects section to five cards with fuller descriptions sourced from resume
+  - Updated Skills categories to align with resume (Programming & Databases / Data & Visualization / AI & Machine Learning)
+  - Added Education anchor link to fixed bottom navigation bar
+  - Fixed workflow command to auto-accept npm package installation (`npx --yes`)
+  - Configured Replit deployment target as static with `publicDir: "."`
+  - Updated README.md changelog (v1.1.0) and usage description
+  - Updated WORKING_NOTES.md current state checklist
+  - Pushed all changes to GitHub: `feat: final documentation and replit config update`
+- **What was left incomplete:**
+  - Favicon and Open Graph meta tags
+  - W3C HTML/CSS validation run
+- **Decisions made:**
+  - Kept brutalist/terminal aesthetic unchanged — all design decisions from v1.0 preserved
+  - Used two-column photo layout instead of photo embedded inside text block
+  - Stats row displayed horizontally beneath bio text
+- **Next step when resuming:**
+  - Add favicon and Open Graph tags (v1.2)
+  - Run W3C HTML and CSS validators
 
 ### 2026-03-19
 
