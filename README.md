@@ -72,7 +72,7 @@ This is a single-page static website designed to showcase my skills, projects, a
 
 *How to use the application once it is running.*
 
-The site is a single-page layout. Use the fixed navigation bar at the bottom of the screen to jump between sections: Home, About, Skills, Projects, Experience, and Contact. All external links (LinkedIn, GitHub, X, email) open in new tabs. The site is fully keyboard-navigable — use Tab to move between interactive elements.
+The site is a single-page layout. Use the fixed navigation bar at the bottom of the screen to jump between sections: Home, About, Skills, Projects, Experience, Education, and Contact. All external links (LinkedIn, GitHub, X, email) open in new tabs. The site is fully keyboard-navigable — use Tab to move between interactive elements.
 
 ## Project Structure
 
@@ -97,6 +97,17 @@ jkirima-personalanding-page/
 ## Changelog
 
 *Release history.*
+
+### v1.1.0 — 2026-03-20
+
+- Added proper professional headshot to About section (restructured to photo + content two-column layout)
+- Added dedicated Education section (University of Iowa, Kirkwood Community College, Google certifications)
+- Added Multi-Ownership in European Soccer as Project 04 (Tableau / Kaggle)
+- Updated Projects section to five cards total with fuller descriptions from resume
+- Updated Skills categories to match resume exactly (Programming & Databases / Data & Visualization / AI & Machine Learning)
+- Updated navigation bar to include Education anchor link
+- Fixed workflow startup command to auto-accept package installation
+- Imported and configured on Replit with static deployment settings
 
 ### v1.0.0 — 2026-03-19
 
