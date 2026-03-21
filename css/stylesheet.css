@@ -167,9 +167,27 @@ section {
 /* ── About ── */
 .about-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 220px 1fr;
   gap: 4rem;
   max-width: 900px;
+  align-items: start;
+}
+
+.about-photo {
+  flex-shrink: 0;
+}
+
+.headshot {
+  display: block;
+  width: 100%;
+  max-width: 220px;
+  border: 1px solid #333;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
 }
 
 .about-text {
@@ -191,17 +209,10 @@ section {
   font-weight: 400;
 }
 
-.headshot {
-  display: block;
-  max-width: 200px;
-  border: 1px solid #333;
-  margin-bottom: 2rem;
-}
-
 .about-stats {
   display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+  flex-direction: row;
+  gap: 2.5rem;
   font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -462,6 +473,19 @@ footer {
     gap: 2rem;
   }
 
+  .about-stats {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .about-photo {
+    text-align: left;
+  }
+
+  .headshot {
+    max-width: 160px;
+  }
+
   .skills-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -513,10 +537,6 @@ footer {
 
   section {
     padding: 3rem 5vw;
-  }
-
-  .headshot {
-    max-width: 150px;
   }
 
   nav {
